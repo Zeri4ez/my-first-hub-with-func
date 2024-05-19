@@ -1,0 +1,171 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local Zeri4HUB = Instance.new("TextLabel")
+local NoclipButton = Instance.new("TextButton")
+local NoclipButton_Roundify_12px = Instance.new("ImageLabel")
+local SpeedHackButton = Instance.new("TextButton")
+local SpeedHackButton_Roundify_12px = Instance.new("ImageLabel")
+local OffSpeedHackButton = Instance.new("TextButton")
+local OffSpeedHackButton_Roundify_12px = Instance.new("ImageLabel")
+local ExitButton = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.332299501, 0, 0.336859226, 0)
+Frame.Selectable = true
+Frame.Size = UDim2.new(0, 756, 0, 401)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(81, 81, 81)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+Zeri4HUB.Name = "Zeri4 HUB"
+Zeri4HUB.Parent = Frame
+Zeri4HUB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Zeri4HUB.BackgroundTransparency = 1.000
+Zeri4HUB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Zeri4HUB.BorderSizePixel = 0
+Zeri4HUB.Position = UDim2.new(0.367724866, 0, 0, 0)
+Zeri4HUB.Size = UDim2.new(0, 200, 0, 50)
+Zeri4HUB.Font = Enum.Font.SourceSansBold
+Zeri4HUB.Text = "Zeri4 HUB"
+Zeri4HUB.TextColor3 = Color3.fromRGB(0, 0, 0)
+Zeri4HUB.TextScaled = true
+Zeri4HUB.TextSize = 14.000
+Zeri4HUB.TextWrapped = true
+
+NoclipButton.Name = "NoclipButton"
+NoclipButton.Parent = Frame
+NoclipButton.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+NoclipButton.BackgroundTransparency = 1.000
+NoclipButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NoclipButton.BorderSizePixel = 0
+NoclipButton.Position = UDim2.new(0.794973552, 0, 0.14251782, 0)
+NoclipButton.Size = UDim2.new(0, 140, 0, 50)
+NoclipButton.ZIndex = 2
+NoclipButton.Font = Enum.Font.SourceSans
+NoclipButton.Text = "Noclip"
+NoclipButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoclipButton.TextSize = 40.000
+NoclipButton.TextWrapped = true
+NoclipButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/a95RwWVu", true))()
+end)
+
+NoclipButton_Roundify_12px.Name = "NoclipButton_Roundify_12px"
+NoclipButton_Roundify_12px.Parent = NoclipButton
+NoclipButton_Roundify_12px.Active = true
+NoclipButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+NoclipButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoclipButton_Roundify_12px.BackgroundTransparency = 1.000
+NoclipButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+NoclipButton_Roundify_12px.Selectable = true
+NoclipButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+NoclipButton_Roundify_12px.Image = "rbxassetid://3570695787"
+NoclipButton_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 85, 0)
+NoclipButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+NoclipButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+NoclipButton_Roundify_12px.SliceScale = 0.120
+
+SpeedHackButton.Name = "SpeedHackButton"
+SpeedHackButton.Parent = Frame
+SpeedHackButton.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+SpeedHackButton.BackgroundTransparency = 1.000
+SpeedHackButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpeedHackButton.BorderSizePixel = 0
+SpeedHackButton.Position = UDim2.new(0.794973552, 0, 0.290550947, 0)
+SpeedHackButton.Size = UDim2.new(0, 140, 0, 50)
+SpeedHackButton.ZIndex = 2
+SpeedHackButton.Font = Enum.Font.SourceSans
+SpeedHackButton.Text = "SpeedHack"
+SpeedHackButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedHackButton.TextSize = 30.000
+SpeedHackButton.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 60
+
+end)
+
+SpeedHackButton_Roundify_12px.Name = "SpeedHackButton_Roundify_12px"
+SpeedHackButton_Roundify_12px.Parent = SpeedHackButton
+SpeedHackButton_Roundify_12px.Active = true
+SpeedHackButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+SpeedHackButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedHackButton_Roundify_12px.BackgroundTransparency = 1.000
+SpeedHackButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+SpeedHackButton_Roundify_12px.Selectable = true
+SpeedHackButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+SpeedHackButton_Roundify_12px.Image = "rbxassetid://3570695787"
+SpeedHackButton_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 85, 0)
+SpeedHackButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+SpeedHackButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+SpeedHackButton_Roundify_12px.SliceScale = 0.120
+
+OffSpeedHackButton.Name = "Off SpeedHack Button"
+OffSpeedHackButton.Parent = Frame
+OffSpeedHackButton.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+OffSpeedHackButton.BackgroundTransparency = 1.000
+OffSpeedHackButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OffSpeedHackButton.BorderSizePixel = 0
+OffSpeedHackButton.Position = UDim2.new(0.794973552, 0, 0.437030584, 0)
+OffSpeedHackButton.Size = UDim2.new(0, 140, 0, 50)
+OffSpeedHackButton.ZIndex = 2
+OffSpeedHackButton.Font = Enum.Font.SourceSans
+OffSpeedHackButton.Text = "Off SpeedHack"
+OffSpeedHackButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+OffSpeedHackButton.TextSize = 25.000
+TextButton.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+OffSpeedHackButton_Roundify_12px.Name = "Off SpeedHack Button_Roundify_12px"
+OffSpeedHackButton_Roundify_12px.Parent = OffSpeedHackButton
+OffSpeedHackButton_Roundify_12px.Active = true
+OffSpeedHackButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+OffSpeedHackButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OffSpeedHackButton_Roundify_12px.BackgroundTransparency = 1.000
+OffSpeedHackButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+OffSpeedHackButton_Roundify_12px.Selectable = true
+OffSpeedHackButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+OffSpeedHackButton_Roundify_12px.Image = "rbxassetid://3570695787"
+OffSpeedHackButton_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 85, 0)
+OffSpeedHackButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+OffSpeedHackButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+OffSpeedHackButton_Roundify_12px.SliceScale = 0.120
+
+ExitButton.Name = "ExitButton"
+ExitButton.Parent = Frame
+ExitButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExitButton.BackgroundTransparency = 1.060
+ExitButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ExitButton.BorderSizePixel = 0
+ExitButton.Position = UDim2.new(0.92592591, 0, 0.0237529501, 0)
+ExitButton.Size = UDim2.new(0, 41, 0, 30)
+ExitButton.Font = Enum.Font.SourceSansBold
+ExitButton.Text = "X"
+ExitButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExitButton.TextScaled = true
+ExitButton.TextSize = 14.000
+ExitButton.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.867724895, 0, -0.0221510436, 0)
+TextButton.Size = UDim2.new(0, 44, 0, 40)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "_"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 1.000
+TextButton.TextWrapped = true
